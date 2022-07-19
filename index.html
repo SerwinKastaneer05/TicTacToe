@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" type= "text/javascript" content="text/html; charset=UTF-8">
+    <meta name="TicTacToe" content="width=device-width">
+    <title>TicTacToe</title>
+    <!--CSS --> 
+    <link href="Style/Styles.css" rel="stylesheet" type="text/css">
+    <h1>TicTacToe</h1>
+    
+  
+  </head>
+<body>
+  <main>
+    <div id="screen" class="center">
+  </div> 
+  <div id="game-screen" class="center hidden">
+    <div class="m-top">
+      <div>
+        <h2>Player</h2>
+        <span class="player-score">0</span>
+      </div>
+      <p class="big-font">X</p>
+    </div>
+    <div>
+      <!-- Game Setup  -->
+      <table class="center">
+        <tr>
+          <td>
+            <button type="button" class="cell" id="cell00" data-id="0"></button>
+          </td>
+          <td>
+            <button type="button" class="cell" id="cell01" data-id="1"></button>
+          </td>
+          <td>
+            <button type="button" class="cell" id="cell02" data-id="2"></button>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <button type="button" class="cell" id="cell10" data-id="3"></button>
+          </td>
+          <td>
+            <button type="button" class="cell" id="cell11" data-id="4"></button>
+          </td>
+          <td>
+            <button type="button" class="cell" id="cell12" data-id="5"></button>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <button type="button" class="cell" id="cell20" data-id="6"></button>
+          </td>
+          <td>
+            <button type="button" class="cell" id="cell21" data-id="7"></button>
+          </td>
+          <td>
+            <button type="button" class="cell" id="cell22" data-id="8"></button>
+          </td>
+        </tr>
+      </table>
+      <p class="display-turn">Your turn</p> <!--Players Turn --> 
+      <button type="button" id="restart">Restart</button>
+    </div>
+    <div class="m-top">
+      <div>
+        <h2>Computer</h2>
+        <span class="computer-score">0</span>
+      </div>
+      <p class="big-font player-two">O</p>
+    </div>
+  </div>
+  </main>
+  <!--JavaScript/ jQuery --> 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="Script/script.js"></script>
+</body>
+</html>
